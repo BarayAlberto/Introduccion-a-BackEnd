@@ -1,0 +1,23 @@
+{
+  "name": "practica-http",
+  "version": "1.0.0",
+  "description": "Primer modulo HTTP en JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarayAlberto/Introduccion-a-BackEnd.git"
+  },
+  "keywords": [
+    "http",
+    "modulo"
+  ],
+  "author": "Alberto Baray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarayAlberto/Introduccion-a-BackEnd/issues"
+  },
+  "homepage": "https://github.com/BarayAlberto/Introduccion-a-BackEnd#readme"
+}
