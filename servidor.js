@@ -2,11 +2,11 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 
-http.createServer(function(request, respone){
+http.createServer(function(request, response){
     console.log('request ', request.url);
 
     var filePath = '.' + request.url;
-    if(filePath == './'){
+    if(filePath = './'){
         filePath = "./index.html";
     }
 
@@ -16,7 +16,7 @@ http.createServer(function(request, respone){
         '.html': 'text/html',
         '.js': 'text/javascript',
         '.css': 'text/css',
-        '.png': 'image/png'
+        '.png': 'image.png'
     };
 
     contentType = mimeTypes[extname] || 'application/octet-stream';
@@ -41,4 +41,4 @@ http.createServer(function(request, respone){
     });
 
 }).listen(3000);
-console.log('Server running at http://127.0.0.1:3000/'); 
+console.log('Server running at http://172.16.0.139:3000/'); 
