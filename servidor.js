@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 
 http.createServer(function(request, respone){
-    console.log('request', request.url);
+    console.log('request ', request.url);
 
     var filePath = '.' + request.url;
     if(filePath == './'){
@@ -28,7 +28,8 @@ http.createServer(function(request, respone){
                     response.writeHead(200, {'Content-Type': contentType});
                     response.end(content, 'utf-8');
                 });
-            }else{
+            }
+            else{
                 response.writeHead(500);
                 response.end('Sorry, check with the site admin for error: ' + error.code+'..\n');
                 response.end();
@@ -40,4 +41,4 @@ http.createServer(function(request, respone){
     });
 
 }).listen(3000);
-console.log('Server running at http://192.168.50.126:3000/'); 
+console.log('Server running at http://127.0.0.1:3000/'); 
