@@ -1,10 +1,10 @@
 BODY {color:green }
 
-#encabezados{color:red; 
-   font-size:20px;
+#encabezado{
+   color: aqua;
    font-family:Courier;
    font-weight:bold;
-   font-style:italic;
+   font-style:oblique;
    line-height:30px;
    letter-spacing:5px;
    text-decoration:underline;

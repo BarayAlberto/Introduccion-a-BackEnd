@@ -6,7 +6,7 @@ http.createServer(function(request, response){
     console.log('request ', request.url);
 
     var filePath = '.' + request.url;
-    if(filePath = './'){
+    if(filePath == './'){
         filePath = "./index.html";
     }
 
@@ -16,7 +16,7 @@ http.createServer(function(request, response){
         '.html': 'text/html',
         '.js': 'text/javascript',
         '.css': 'text/css',
-        '.png': 'image.png'
+        '.png': 'image/png'
     };
 
     contentType = mimeTypes[extname] || 'application/octet-stream';
@@ -41,4 +41,4 @@ http.createServer(function(request, response){
     });
 
 }).listen(3000);
-console.log('Server running at http://172.16.0.139:3000/'); 
+console.log('Server running at http://192.168.0.13:3000/'); 
